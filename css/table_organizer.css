@@ -1,0 +1,197 @@
+* {
+    font-family: sans-serif;
+}
+
+/** le formulaire pour charger des données **/
+#zone_load_data {
+    display:none;
+}
+
+#zone_load_array {
+    display:none;
+}
+
+#zone_split_tableau {
+    display:none;
+}
+
+
+/** container contenant les icônes (chargement et génération), la barre de progression et le log**/
+#zone_traite_data {
+
+    /** background-color: #1C3E57 **/
+
+
+}
+
+/** icônes (chargement et génération des tenseurs**/
+#zone_generation {
+    position:relative;
+    width:100%;
+    height:50px;
+}
+
+/** barre de progression **/
+#progression_x {
+    position:relative;
+    width: 90%;
+    height : 40px;
+    margin-top: 10px;
+
+}
+
+/** LOG **/
+#log_charge_x {
+    position:relative;
+    width:100%;
+    height:150px;
+    max-height:150px;
+    color:black;
+    overflow:scroll;
+    font-family: "Courier New";
+    display:none;
+}
+
+/** chargement dynamique des images**/
+div#zone_charge_image_x {
+    position:absolute;
+    width:150px;
+    height:150px;
+    top:20px;
+    left:650px;
+
+
+}
+
+/** icône pour afficher le détail du log **/
+#affiche_log {
+    position:relative;
+    top:-35px;
+    left:90%;
+}
+
+
+/** Tableau avec le détail des data**/
+div#zone_tableau {
+    width:100%;
+    margin:10px;
+
+}
+
+table.wbto_tableau {
+    /*width:100%;*/
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+    border-collapse: collapse;
+}
+
+table.wbto_tableau th {
+    background-color: lightgray;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+    border-collapse: collapse;
+    padding: 3px;
+}
+
+table.wbto_tableau th img {
+    margin-left: 5px;
+}
+
+table.wbto_tableau td {
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+    border-collapse: collapse;
+    padding: 3px;
+}
+
+table.wbto_tableau th[scope=row] {
+    text-align: left;
+}
+
+table.wbto_tableau tr.wbto_propriete {
+   color: blue;
+}
+
+table.wbto_tableau tr.wbto_data {
+   color: brown;
+}
+
+table.wbto_tableau .wbto_void {
+    background-color: lightgrey;
+}
+
+table.wbto_tableau .wbto_in {
+    background-color: lightgreen;
+}
+
+table.wbto_tableau .wbto_out {
+    background-color: lightpink;
+}
+
+tr.wbto_visible {
+    visibility:visible;
+}
+
+tr.wbto_hidden {
+    visibility:collapse;
+}
+
+
+
+div#zone_charge_image_y {
+	width:45%;
+	float:right;
+	margin:50px;
+
+}
+
+
+
+#progression_y {
+    width: 500px;
+    position: relative;
+	margin:20px;
+
+}
+
+#log_charge_y {
+	width:100%;
+	height:200px;
+	max-height:200px;
+	color:lightpink;
+	overflow:scroll;
+	background-color:white;
+	font-weight:bold;
+}
+
+#zone_x_y_img table {
+	border-style: solid;
+	border-width: 1px;
+	border-collapse: collapse;
+}
+
+#zone_x_y_img td {
+	border-style: solid;
+	border-width: 1px;
+	text-align: center;
+}
+
+p.text_token {
+    cursor:help;
+}
+
+div.wbto_meta input {
+    width:600px;
+}
+
+
+
+
+
+
+
+

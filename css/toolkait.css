@@ -1,0 +1,338 @@
+/**
+foncé : #010214
+moyen : #1C3E57
+clair : #91D8EC
+
+**/
+
+body {
+	margin:0px;
+	padding:0px;
+	background-color: #edf5ff;
+    font-family: sans-serif;
+}
+
+
+#wb_head {
+    position:relative;
+    top : 0px;
+    left : 0px;
+    height : 200px;
+    width:100%;
+    background-color: #010214;
+    background-image: url(../IMG/bandeau/neurones2.png);
+    background-repeat: repeat-x;
+
+        
+}
+
+#bandeau_titre_1 {
+	position:absolute;
+	color: #91D8EC;
+	font-size: 25px;
+	top: 100px;
+	left: 550px;
+	height : 70px;
+	width: 500px;
+	text-align: center;
+        background-color: #010214;
+        opacity:0.6;
+        
+}
+
+#img_titre {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 250px;
+    opacity: 0.6;
+}
+
+#img_logo {
+
+    opacity: 0.8;
+}
+
+
+#wb_menu {
+    position : sticky;
+    top : 0px;
+    left : 0px;
+    width: 70px;
+    height: 2000px;
+    display : flex;
+    flex-direction : column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items:center;
+    background-color: #010214;
+}
+
+
+
+#wb_main {
+	position : relative;
+    padding:10px;
+    left: 70px;
+    top: -2000px;
+    width:94%;
+    height:10000px;
+    background-color: #edf5ff;
+
+}
+
+div.wb_menu_main {
+    width:100%;
+    height:60px;
+    text-align: center;
+    display : flex;
+    
+}
+
+div.wb_menu_main img {
+    margin:auto;
+}
+
+
+
+div.wb_menu_main:hover {
+    background-color: #1C3E57;
+    cursor: pointer;
+    
+}
+
+div.wb_menu_div_selected {
+    visibility: visible;
+}
+
+div.wb_menu_div_not_selected {
+    visibility: hidden;
+}
+
+div.wb_menu_selected {
+    background-color: #1C3E57 !important;
+    padding-left: 15px;
+}
+
+div.wb_menu_not_selected {
+    
+}
+
+div.wb_menu_main_div {
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:99%;
+    height:100%;
+    padding:10px;
+    /**border-left-style: solid;
+    border-left-width: 3px;
+    border-left-color: #1C3E57;**/
+        
+}
+
+.pointer {
+	cursor:pointer;
+}
+
+img.icone {
+    margin-left: 10px;
+    max-height: 32px;
+    max-width: 32px;
+}
+
+img.icone:hover {
+    opacity: 70%;
+}
+
+/** les consoles de gestion des différents onglets **/
+
+div.console {
+    width:600px;
+    margin:10px;
+    padding:5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+    border-collapse: collapse;
+    border-radius: 10px;
+    background-color: #EEEEEE;
+    z-index: 10;
+
+}
+
+table.barre_icones {
+    background-color: lightgray;
+    padding:5px;
+    margin-bottom: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #a6a3a3;
+}
+
+table.barre_icones td.icone{
+    width:30px
+}
+
+#icone_user {
+    left:93%;
+    top:80px;
+    position:absolute;
+    width:70px;
+    height:70px;
+    padding: 0;
+    margin: 0;
+}
+
+#icone_lang {
+    left:85%;
+    top:90px;
+    position:absolute;
+    width:70px;
+    height:70px;
+    padding: 0;
+    margin: 0;
+
+}
+
+#icone_lang img{
+    height:50px;
+}
+
+#icone_user img{
+    width:70px;
+    height:70px;
+}
+
+#user_name {
+    position:absolute;
+    top:160px;
+    left:89%;
+    width:200px;
+    text-align: center;
+    height: 30px;
+    color:white;
+
+}
+
+#bloc_presentation {
+    top:-1000px;
+    left:400px;
+    width:1050px;
+    /**height:450px;**/
+    /**margin:auto;**/
+    padding:20px;
+    /** background-color: lightgrey; **/
+    position:relative;
+    font-size: 19px;
+}
+
+#bloc_carousel {
+    top:-1000px;
+    left:400px;
+
+    width:1050px;
+   /** height:550px;**/
+    /**margin:auto;**/
+    padding:20px;
+    /**background-color: white;**/
+    position:relative;
+
+
+}
+
+#bloc_menu_lateral {
+    top:0px;
+    left:0px;
+    width:200px;
+    height:1000px;
+    /**height:100px**/;
+    /**margin:2px;**/
+    padding:5px;
+    /**background-color: antiquewhite;**/
+    position:sticky;
+    background-color: #1C3E57;
+
+}
+
+#carousel_img {
+    max-height:400px;
+    margin:auto;
+    display:block;
+}
+
+.flag {
+    float:left;
+    margin-left:20px;
+    height:100px;
+    text-align: center;
+    align-content: center;
+
+}
+
+.flag img {
+    width:70px;
+    display:block;
+}
+
+.flag img.selected {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #1C3E57;
+    padding: 2px;
+
+}
+
+.flag div {
+    align:auto;
+}
+
+.flag a {
+    font-size: 35px;
+    text-decoration: none;
+    color:#1C3E57;
+}
+
+#bloc_menu_lateral button {
+    width: 160px;
+    margin:20px;
+    font-weight: bold;
+    background-color: #91D8EC;
+    color:#1C3E57;
+    border-radius: 4px;
+    border-color: #91D8EC;
+    font-size: 14px;
+}
+
+#bloc_menu_lateral button:hover {
+    background-color: #1C3E57;
+    color:#91D8EC;
+}
+
+img.img_inline {
+    width:30px;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+#bloc_tutos {
+    top:-1000px;
+    left:200px;
+
+    width:1050px;
+    /** height:550px;**/
+    /**margin:auto;**/
+    padding:20px;
+    /**background-color: white;**/
+    position:relative;
+
+}
+
+#tokenizer_query {
+    width:400px;
+    height:200px;
+}
+
+
+
+

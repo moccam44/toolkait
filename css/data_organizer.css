@@ -1,0 +1,48 @@
+#zone_DO_data_form, #zone_DO_model_form {
+    width:500px;
+    margin-left: 0px;
+}
+
+#zone_DO_data_form table,#zone_DO_model_form table {
+    width:100%;
+}
+
+#zone_DO_data_liste table,#zone_DO_model_liste table {
+    width:1000px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+    border-collapse: collapse;
+
+}
+
+#zone_DO_data_liste td, #zone_DO_model_liste td {
+    border-bottom-style: solid;
+    border-bottom-color: blue;
+    border-bottom-width: 1px;
+    padding: 5px;
+
+}
+
+#zone_DO_data_liste td.icone, #zone_DO_model_liste td.icone {
+    width:30px;
+}
+
+
+#zone_DO_data_form_texte, #zone_DO_model_form_texte {
+    width:100%;
+    height:100px;
+}
+
+
+#progressbar_storage {
+    width: 500px;
+    position: relative;
+    float: left;
+    margin: 20px;
+
+}
+
+#zone_data_commentaire {
+    display:none;
+}

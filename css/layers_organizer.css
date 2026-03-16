@@ -1,0 +1,92 @@
+div#zone_layers {
+    width:100%;
+}
+
+ul.wblo_layers {
+    list-style-type: none;
+    width : 80%;
+}
+
+ul.wblo_layers li.layer {
+    width:100%;
+    height : 40px;
+    
+    padding: 10px;
+    margin: 10px;
+    border-style: solid;
+    border-color: blue;
+    border-width: 2px;
+    vertical-align: middle;
+}
+
+ul.wblo_layers li.layer:not(.non_sortable):hover {
+    border-style: dashed;
+    cursor:grab;
+    opacity: 0.8;
+}
+
+tr.wblo_visible {
+    visibility:visible;
+}
+
+tr.wblo_hidden {
+    visibility:collapse;
+}
+
+ul.wblo_layers li.wblo_dense {
+    background-color: lightskyblue;
+}
+
+ul.wblo_layers li.wblo_convolution {
+    background-color: lightcoral;
+}
+
+ul.wblo_layers li.wblo_pooling {
+    background-color: lightpink;
+}
+
+ul.wblo_layers li.wblo_util {
+    background-color: lightsteelblue;
+}
+
+ul.wblo_layers li.layer_input {
+    background-color: violet;
+}
+
+ul.wblo_layers li.layer div {
+    float:left;
+    margin : 10px;
+}
+
+ul.wblo_layers li.layer img {
+    float:right;
+    margin : 10px;
+    cursor:pointer;
+}
+
+ul.wblo_layers li.layer:not(.non_sortable):hover img:hover{
+    opacity: 1;
+}
+
+b.wblo_trainable {
+    font-weight: bold;
+    color: green;
+}
+
+table.wblo_modele_synthese {
+    border-style: solid;
+    border-color: #1C3E57;
+    border-collapse: collapse;
+    border-width: 2px;
+}
+
+table.wblo_modele_synthese td {
+    border-style: solid;
+    border-color: #1C3E57;
+    border-collapse: collapse;
+    border-width: 2px;
+    min-width: 200px;
+    padding:5px;
+}
+
+

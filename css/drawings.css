@@ -1,0 +1,24 @@
+table.drawings_outputs {
+	border-style: solid;
+    border-color: #1C3E57;
+    border-collapse: collapse;
+    border-width: 1px;
+    padding:0px;
+}
+
+table.drawings_outputs.texte td.drawings_value{
+	height:7px;
+	width:7px;
+	min-height:7px;
+	min-width:7px;
+	padding:0px;
+	border-style: solid;
+    border-color: #1C3E57;
+    border-collapse: collapse;
+    border-width: 1px;
+	
+}
+
+table.drawings_outputs td.container_3d{
+	padding 10px;
+}

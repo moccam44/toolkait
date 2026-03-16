@@ -1,0 +1,48 @@
+#training_progressbar {
+    width: 90%;
+    position: relative;
+	float : right;
+	margin:20px;
+}
+
+#training_progressbar_batch {
+    width: 90%;
+    position: relative;
+	float : right;
+	margin:20px;
+}
+
+.progress-label {
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+#zone_training_monitoring {
+	max-height:500px;
+	width:90%;
+	margin-top: 80px;
+}
+
+
+
+#zone_training {
+	width:90%;
+	position:static;
+}
+
+#zone_training_main {
+	width:1300px;
+	height:200px;
+
+}
+
+/** /!\ classe tfjs pour l'affichage des courbes d'apprentissage**/
+
+div.vega-embed {
+	float: left;
+	margin-left: 50px;
+}
+

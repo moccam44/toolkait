@@ -1,0 +1,50 @@
+#popup_user div.icone_user {
+    margin-left:43%;
+    margin-bottom: 50px;
+
+}
+
+#popup_user div.icone_user img{
+    width:70px;
+    height:70px;
+
+}
+
+#connexion_user {
+    float:left;
+    height:200px;
+    width:46%;
+    margin:10px;
+    border-right-style: dotted;
+    border-right-width: 2px;
+    border-right-color: blue;
+}
+
+#inscription_user {
+    float:left;
+    width:46%;
+    margin:10px;
+
+}
+
+#popup_user h3 {
+    color:#1C3E57;
+    font-size: 17px;
+    text-align: center;
+}
+
+#popup_user table {
+    width:100%
+}
+
+#popup_user input {
+    width:90%
+}
+
+#popup_user td {
+    padding-bottom: 10px;
+}
+
+#popup_user .center {
+    text-align: center;
+}

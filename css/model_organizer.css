@@ -1,0 +1,234 @@
+div#zone_model {
+
+}
+
+#zone_info_modele_sauv {
+    display:none;
+}
+
+#zone_info_modele_load {
+    display:none;
+}
+
+div.wbmo_meta {
+    width:400px !important;
+    position:fixed;
+    top:260px;
+    left:75px;
+}
+
+div.wbmo_layers {
+    width : 80%;
+}
+
+/** DIV pour 1 layer **/
+
+div.wbmo_layer {
+    width : 300px;
+	height : 80px;
+	padding: 10px;
+    /**margin: 10px;**/
+    border-style: solid;
+    border-color: blue;
+    border-width: 2px;
+    vertical-align: middle;
+	position:absolute;
+	z-index:1;
+
+}
+
+div.wbmo_layer:hover {
+	border-style: dashed;
+    cursor:grab;
+    opacity: 0.8;
+	
+}
+
+/** couleurs en fonction des types de layer **/
+
+div.wbmo_layers div.wbmo_dense {
+    background-color: lightskyblue;
+}
+
+div.wbmo_layers div.wbmo_convolution {
+    background-color: lightcoral;
+}
+
+div.wbmo_layers div.wbmo_pooling {
+    background-color: lightpink;
+}
+
+div.wbmo_layers div.wbmo_util {
+    background-color: lightsteelblue;
+}
+
+div.wbmo_layers div.wbmo_input {
+    background-color: violet;
+}
+
+
+/** ICONES **/
+
+div.wbmo_layer img:hover {
+	cursor:pointer;
+	opacity:70%;
+}
+
+img.wbmo_input_icone {
+	position:absolute;
+	left:45%;
+	top:-16px;
+}
+
+img.wbmo_output_icone {
+	position:absolute;
+	left:45%;
+	top:90%
+}
+
+img.wbmo_update_layer {
+	display : inline;
+}
+
+img.wbmo_delete_layer {
+	display : inline;
+}
+
+img.wbmo_click_highlight {
+    display : inline;
+}
+
+/** ------------------  **/
+
+connection.wbmo_connection {
+	border-radius:50px;
+	border: 2px solid blue;
+
+	z-index : 0;
+}
+
+connection.wbmo_connection_highlight {
+    border-radius:50px;
+    border: 2px solid red;
+
+    z-index : 0;
+}
+
+
+div.wbmo_nom_layer {
+	display : inline;
+}
+
+div.wbmo_definition_layer {
+	margin : 10px;
+	/**margin-top : 30px;**/
+	padding: 10px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+ul.wblo_layers li.layer {
+    width:100%;
+    height : 40px;
+    
+    padding: 10px;
+    margin: 10px;
+    border-style: solid;
+    border-color: blue;
+    border-width: 2px;
+    vertical-align: middle;
+}
+
+ul.wblo_layers li.layer:not(.non_sortable):hover {
+    border-style: dashed;
+    cursor:grab;
+    opacity: 0.8;
+}
+
+tr.wblo_visible {
+    visibility:visible;
+}
+
+tr.wblo_hidden {
+    visibility:collapse;
+}
+
+ul.wblo_layers li.wblo_dense {
+    background-color: lightskyblue;
+}
+
+ul.wblo_layers li.wblo_convolution {
+    background-color: lightcoral;
+}
+
+ul.wblo_layers li.wblo_pooling {
+    background-color: lightpink;
+}
+
+ul.wblo_layers li.wblo_util {
+    background-color: lightsteelblue;
+}
+
+ul.wblo_layers li.layer_input {
+    background-color: violet;
+}
+
+ul.wblo_layers li.layer div {
+    float:left;
+    margin : 10px;
+}
+
+ul.wblo_layers li.layer img {
+    float:right;
+    margin : 10px;
+    cursor:pointer;
+}
+
+ul.wblo_layers li.layer:not(.non_sortable):hover img:hover{
+    opacity: 1;
+}
+
+b.wblo_trainable {
+    font-weight: bold;
+    color: green;
+}
+
+table.wblo_modele_synthese {
+    border-style: solid;
+    border-color: #1C3E57;
+    border-collapse: collapse;
+    border-width: 2px;
+}
+
+table.wblo_modele_synthese td {
+    border-style: solid;
+    border-color: #1C3E57;
+    border-collapse: collapse;
+    border-width: 2px;
+    min-width: 200px;
+    padding:5px;
+}
+
+p.loading {
+    color:green;
+    font-weight:bold;
+}
+
+#weights_copy {
+    font-size:25px;
+}
+
+#weights_copy td {
+    vertical-align:center;
+    text-align: center;
+}
+
+

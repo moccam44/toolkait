@@ -1,0 +1,36 @@
+/**tableau résultats cat **/
+
+#zone_predictions_form {
+	max-height:300px;
+	overflow: auto;
+}
+
+#zone_predictions_resultat {
+	max-height:300px;
+	overflow: auto;
+}
+
+#zone_predictions_resultat table {
+	border : 1px solid;
+	border-collapse : collapse;
+}
+
+#zone_predictions_resultat td {
+	border : 1px solid;
+	border-collapse : collapse;
+}
+
+#zone_predictions_form td.slider {
+	width : 500px;
+}
+
+#zone_predictions_form div.slider {
+	margin-bottom: 20px;
+}
+
+td.surligne {
+	background-color: lightgoldenrodyellow;
+}
+
+
+
