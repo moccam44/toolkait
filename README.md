@@ -26,7 +26,8 @@ You must use a web server with mysql and PHP (testsed with PHP 7.4.33 and mysql 
  - mail adress (send mail for forgotten password)
  - url of your toolkait installation
 5. /saved_data/ and /saved_models/ must have write permissions for the Apache2 (or any other web server) user
-5. run toolkait by accessing the index.php or the toolkait.php files from the browser
+6. exemple models can be downloaded from https://toolkait.net/exemple_models.tar.gz and copied in the /exemple_models/ folder
+7. run toolkait by accessing the index.php or the toolkait.php files from the browser
 
 # troubleshooting
 if you experience PHP notices and warnings try in php.ini
