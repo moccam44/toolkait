@@ -424,7 +424,7 @@ function get_similar_embeddings (tokenizer, idx_token, params) {
 ///////////////////////////////////////////////////////
 // refresh_embeddings_form ()
 function refresh_embeddings_form() {
-	let html"";
+	let html="";
 	for (let idx in model_organizer.layers) {
 		let name = model_organizer.layers[idx]["name"];
 		html+="<option value='"+idx+"'>"+name+"</option>";
