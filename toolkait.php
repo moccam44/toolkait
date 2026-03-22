@@ -105,6 +105,8 @@ include_once ("php/lang.php");
 				$("#bool_load_weights").checkboxradio({icon: false});
 				$("#bool_load_ema").checkboxradio({icon: false});
 				$("#bool_save_ema").checkboxradio({icon: false});
+				$("#bool_one_hot_embeddings").checkboxradio({icon: false});
+
 				
 				// chef_orchestre
 				chef_orchestre=new chef_orchestre();
@@ -150,14 +152,14 @@ include_once ("php/lang.php");
 				// Gestionnaire d'erreurs globales
                 window.onerror = function(message, source, lineno, colno, error) {
                   console.error("Erreur non capturée :", message);
-                  alert(glob_get_intitule("alert_unhandled_error", {message:message}));
+                  alert(glob_get_intitule("alert_unhandled_error", {"%message":message}));
                   return true;
                 };
 
                 // Gestionnaire de rejets de promesses non gérés
                 window.addEventListener('unhandledrejection', (event) => {
                   console.error("Promesse non gérée :", event.reason);
-                  alert(glob_get_intitule("alert_unhandled_error", {message:event.reason}));
+                  alert(glob_get_intitule("alert_unhandled_error", {"%message":event.reason}));
                   return true;
                 });
 
@@ -631,7 +633,7 @@ include_once ("php/lang.php");
                         embedding layer : <select id="select_embeddings_layer"></select>
                         <button onclick="refresh_embeddings_form();"><?PHP print_intitule("button_refresh_list");  ?></button><br>
                         from token <input id="from_token"> to <input id="to_token">
-                        <input type="checkbox" id="bool_one_hot_embeddings"><br>
+                        <label for="bool_one_hot_embeddings">one hot</label><input type="checkbox" id="bool_one_hot_embeddings"><br>
                         <button onclick="genere_embeddings();"><?PHP print_intitule("button_refresh_list");  ?></button>
                         <div id="progression_embeddings"></div>
 
