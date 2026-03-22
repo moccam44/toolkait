@@ -595,21 +595,35 @@ include_once ("php/lang.php");
 
             <!------------------------------------- TOKENIZERS------------------------------------------------------------------>
             <div class="wb_menu_main_div" name="wb_tokenizers">
-                <button onclick="affiche_tokenizers()"><?PHP print_intitule("button_tokenizers");  ?></button><br>
-                <div id="zone_tokenizers">
 
+                <ul>
+                    <li><a href="#zone_tk_tokenizers"><?PHP print_intitule("tab_tk_tokenizers");  ?></a></li>
+                    <li><a href="#zone_tk_embeddings"><?PHP print_intitule("tab_tk_embeddings");  ?></a></li>
+                    <li><a href="#zone_tf_var"><?PHP print_intitule("tab_variables");  ?></a></li>
+                </ul>
+
+                <div id="zone_tk_tokenizer">
+
+                    <button onclick="affiche_tokenizers()"><?PHP print_intitule("button_tokenizers");  ?></button><br>
+                    <div id="zone_tokenizers">
+
+                    </div>
+                    <br/>
+
+                    <textarea id="tokenizer_query"></textarea>
+                    <br/>
+                    <select id="tokenizer_type_query"><option value="encode">encode</option><option value="decode">decode</option></select>
+                    <select id="select_tokenizer"></select>
+                    <button onclick="query_tokenizer()"><?PHP print_intitule("button_tokenizer_query");  ?></button>
+                    <br/>
+
+                    <div id="tokenizer_reponse">
+
+                    </div>
                 </div>
-                <br/>
 
-                <textarea id="tokenizer_query"></textarea>
-                <br/>
-                <select id="tokenizer_type_query"><option value="encode">encode</option><option value="decode">decode</option></select>
-                <select id="select_tokenizer"></select>
-                <button onclick="query_tokenizer()"><?PHP print_intitule("button_tokenizer_query");  ?></button>
-                <br/>
-
-                <div id="tokenizer_reponse">
-
+                <div id="zone_tk_embeddings">
+                    <p>embeddings</p>
                 </div>
 
             </div>
