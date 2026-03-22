@@ -599,7 +599,7 @@ include_once ("php/lang.php");
             <div id="zone_tokenizers">
 
                 <ul>
-                    <li><a href="#zone_tk_tokenizers"><?PHP print_intitule("tab_tk_tokenizers");  ?></a></li>
+                    <li><a href="#zone_tk_tokenizer"><?PHP print_intitule("tab_tk_tokenizers");  ?></a></li>
                     <li><a href="#zone_tk_embeddings"><?PHP print_intitule("tab_tk_embeddings");  ?></a></li>
                 </ul>
 
