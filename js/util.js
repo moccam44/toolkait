@@ -405,6 +405,7 @@ function clique_genere_embeddings () {
 		max=Number(max);
 	}
 	let params={min : min, max: max, div_progression: $("#progression_embeddings"), bool_one_hot: bool_one_hot};
+	console.log(params);
 	genere_embeddings (tokenizer, idx_layer, params);
 }
 
