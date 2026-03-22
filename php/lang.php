@@ -117,6 +117,9 @@ $GLOBALS["intitules"]["button_weights_modifications"]=array("fr"=>"afficher les 
 $GLOBALS["intitules"]["button_layers_outputs"]=array("fr"=>"afficher la sortie des couches", "en"=>"display layers outputs");
 $GLOBALS["intitules"]["button_affiche_form_select_layers"]=array("fr"=>"sélectionner les couches", "en"=>"select layers");
 
+$GLOBALS["intitules"]["tab_tk_tokenizers"]=array("fr"=>"Tokenizers", "en"=>"Tokenizers");
+$GLOBALS["intitules"]["tab_tk_embeddings"]=array("fr"=>"Embeddings", "en"=>"Embeddings");
+
 $GLOBALS["intitules"]["tab_memory_usage"]=array("fr"=>"utilisation de la mémoire", "en"=>"memory usage");
 $GLOBALS["intitules"]["tab_environment"]=array("fr"=>"environnement", "en"=>"environment");
 $GLOBALS["intitules"]["tab_variables"]=array("fr"=>"variables globales", "en"=>"global variables");

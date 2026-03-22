@@ -99,6 +99,7 @@ include_once ("php/lang.php");
 				$("#zone_info_modele_load_accordion").accordion({heightStyle:"content", active:0, collapsible:true});
 				$("#menu_model").tabs();
 				$("#zone_tf").tabs();
+				$("#zone_tokenizers").tabs();
 
 				// checkbox
 				$("#bool_load_weights").checkboxradio({icon: false});
@@ -595,11 +596,11 @@ include_once ("php/lang.php");
 
             <!------------------------------------- TOKENIZERS------------------------------------------------------------------>
             <div class="wb_menu_main_div" name="wb_tokenizers">
+            <div id="zone_tokenizers">
 
                 <ul>
                     <li><a href="#zone_tk_tokenizers"><?PHP print_intitule("tab_tk_tokenizers");  ?></a></li>
                     <li><a href="#zone_tk_embeddings"><?PHP print_intitule("tab_tk_embeddings");  ?></a></li>
-                    <li><a href="#zone_tf_var"><?PHP print_intitule("tab_variables");  ?></a></li>
                 </ul>
 
                 <div id="zone_tk_tokenizer">
@@ -625,7 +626,7 @@ include_once ("php/lang.php");
                 <div id="zone_tk_embeddings">
                     <p>embeddings</p>
                 </div>
-
+            </div>
             </div>
 
 			<!------------------------------------- TFJS ------------------------------------------------------------------>
