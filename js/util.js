@@ -388,7 +388,6 @@ function genere_embeddings (tokenizer, idx_layer, params) {
 
 function clique_genere_embeddings () {
 	let idx_tokenizer=$("#select_tokenizer_embeddings").val();
-	let tokenizer=tokenizers[idx_tokenizer];
 	let idx_layer=$("#select_embeddings_layer").val();
 	idx_layer=Number(idx_layer);
 	let min=$("#from_token").val();
@@ -405,7 +404,7 @@ function clique_genere_embeddings () {
 		max=Number(max);
 	}
 	let params={min : min, max: max, div_progression: $("#progression_embeddings"), bool_one_hot: bool_one_hot};
-	genere_embeddings (tokenizer, idx_layer, params);
+	genere_embeddings (idx_tokenizer, idx_layer, params);
 }
 
 ///////////////////////////////////////////////////////
