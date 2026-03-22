@@ -624,7 +624,21 @@ include_once ("php/lang.php");
                 </div>
 
                 <div id="zone_tk_embeddings">
-                    <p>embeddings</p>
+
+                    <div id="zone_tk_embeddings_form">
+                        tokenizer : <select id="select_tokenizer_embeddings"></select><br>
+                        embedding layer : <select id="select_embeddings_layer"></select>
+                        <button onclick="refresh_embeddings_form();"><?PHP print_intitule("button_refresh_list");  ?></button><br>
+                        from token <input id="from_token"> to <input id="to_token">
+                        <input type="checkbox" id="bool_one_hot_embeddings"><br>
+                        <button onclick="genere_embeddings();"><?PHP print_intitule("button_refresh_list");  ?></button>
+
+
+                    </div>
+                    <div id="zone_tk_embeddings_result">
+
+                    </div>
+
                 </div>
             </div>
             </div>

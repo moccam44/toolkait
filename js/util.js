@@ -259,6 +259,7 @@ function affiche_tokenizers () {
 	}
 	$("#zone_tokenizers").html(affichage);
 	$("#select_tokenizer").html(html_select_tokenizer);
+	$("#select_tokenizer_embeddings").html(html_select_tokenizer);
 }
 
 ///////////////////////////////////////////////////////
@@ -416,6 +417,19 @@ function get_similar_embeddings (tokenizer, idx_token, params) {
 
 	values.print();
 	indices.print();
+
+
+}
+
+///////////////////////////////////////////////////////
+// refresh_embeddings_form ()
+function refresh_embeddings_form() {
+	let html"";
+	for (let idx in model_organizer.layers) {
+		let name = model_organizer.layers[idx]["name"];
+		html+="<option value='"+idx+"'>"+name+"</option>";
+	}
+	$("#select_embeddings_layer").html(html);
 
 
 }
