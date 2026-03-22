@@ -330,6 +330,7 @@ function genere_embeddings (tokenizer, idx_layer, params) {
 	let min_tokenizer=params["min_tokenizer"];
 	let max_tokenizer=params["max_tokenizer"];
 	let div_progression=params["div_progression"];
+	$(div_progression).html("generating embeddings... ");
 	if (bool_one_hot === undefined) {
 		bool_one_hot=false;
 	}
@@ -355,7 +356,7 @@ function genere_embeddings (tokenizer, idx_layer, params) {
 	let layer=model_organizer.layers[idx_layer]["tf_layer"];
 
 	for (let idx=min_tokenizer; idx<max_tokenizer; idx++) {
-		$(div_progression).html("token "+idx);
+
 		if (bool_one_hot === true) {
 			input=int_2_one_hot(idx, vocab_size);
 		} else {
@@ -367,7 +368,6 @@ function genere_embeddings (tokenizer, idx_layer, params) {
 			return tf.squeeze(output);
 		});
 	}
-	$(div_progression).html("stacking... ");
 	stacked_embeddings = tf.stack(embeddings);
 	try {
 		tf.dispose(tokenizers[tokenizer]["embeddings"]);
