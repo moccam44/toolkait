@@ -329,6 +329,7 @@ function genere_embeddings (tokenizer, idx_layer, params) {
 	let bool_one_hot=params["bool_one_hot"];
 	let min_tokenizer=params["min_tokenizer"];
 	let max_tokenizer=params["max_tokenizer"];
+	let div_progression=params["div_progression"];
 	if (bool_one_hot === undefined) {
 		bool_one_hot=false;
 	}
@@ -354,6 +355,7 @@ function genere_embeddings (tokenizer, idx_layer, params) {
 	let layer=model_organizer.layers[idx_layer]["tf_layer"];
 
 	for (let idx=min_tokenizer; idx<max_tokenizer; idx++) {
+		$(div_progression).html("token "+idx);
 		if (bool_one_hot === true) {
 			input=int_2_one_hot(idx, vocab_size);
 		} else {
@@ -365,6 +367,7 @@ function genere_embeddings (tokenizer, idx_layer, params) {
 			return tf.squeeze(output);
 		});
 	}
+	$(div_progression).html("stacking... ");
 	stacked_embeddings = tf.stack(embeddings);
 	try {
 		tf.dispose(tokenizers[tokenizer]["embeddings"]);
@@ -376,7 +379,32 @@ function genere_embeddings (tokenizer, idx_layer, params) {
 	tokenizers[tokenizer]["embeddings_max"]=max_tokenizer;
 
 	tf.dispose(embeddings);
+	$(div_progression).html("OK ");
 
+}
+
+///////////////////////////////////////////////////////
+// clique_genere_embeddings ()
+
+function clique_genere_embeddings () {
+	let idx_tokenizer=$("#select_tokenizer_embeddings").val();
+	let tokenizer=tokenizers[idx_tokenizer];
+	let idx_layer=$("#select_embeddings_layer").val();
+	idx_layer=Number(idx_layer);
+	let min=$("#from_token").val();
+	let max=$("#to_token").val();
+	if (min == "") {
+		min=undefined;
+	} else {
+		min=Number(min);
+	}
+	if (max == "") {
+		max=undefined;
+	} else {
+		max=Number(max);
+	}
+	let params={min : min, max: max, div_progression: $("#progression_embeddings")};
+	genere_embeddings (tokenizer, idx_layer, params);
 }
 
 ///////////////////////////////////////////////////////
@@ -430,9 +458,9 @@ function refresh_embeddings_form() {
 		html+="<option value='"+idx+"'>"+name+"</option>";
 	}
 	$("#select_embeddings_layer").html(html);
-
-
 }
+
+
 
 
 
