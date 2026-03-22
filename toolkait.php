@@ -99,7 +99,7 @@ include_once ("php/lang.php");
 				$("#zone_info_modele_load_accordion").accordion({heightStyle:"content", active:0, collapsible:true});
 				$("#menu_model").tabs();
 				$("#zone_tf").tabs();
-				$("#zone_tokenizers").tabs();
+				$("#zone_tab_tokenizers").tabs();
 
 				// checkbox
 				$("#bool_load_weights").checkboxradio({icon: false});
@@ -596,7 +596,7 @@ include_once ("php/lang.php");
 
             <!------------------------------------- TOKENIZERS------------------------------------------------------------------>
             <div class="wb_menu_main_div" name="wb_tokenizers">
-            <div id="zone_tokenizers">
+            <div id="zone_tab_tokenizers">
 
                 <ul>
                     <li><a href="#zone_tk_tokenizer"><?PHP print_intitule("tab_tk_tokenizers");  ?></a></li>
