@@ -443,7 +443,7 @@ function get_similar_embeddings (tokenizer, idx_token, params) {
 	// Trouve les indices des tokens les plus proches
 	const {values, indices} = tf.topk(similarities, nb_top, true); // Top 5
 
-	return ({values:values, indices:indices});
+	return ({values:values.arraySync(), indices:indices.arraySync()});
 
 
 }
