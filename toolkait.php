@@ -82,6 +82,7 @@ include_once ("php/lang.php");
             var glob_number_field_max=3.0;
             var glob_word_tokenizer_shuffle=false;
             var glob_text_prediction_nb_words=5;
+            var glob_nb_embeddings_compare=6;
 			
 			
 			

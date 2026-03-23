@@ -456,10 +456,7 @@ function clique_compare_embeddings () {
 	let mot=$("#token_2_embeddings").val();
 	let tokens=tokenizer.encode(mot);
 	let token=tokens[1]; // on récupère le 2e token
-console.log(tokens);
-console.log(token);
-	let similars=get_similar_embeddings (idx_tokenizer, token, {});
-console.log(similars);
+	let similars=get_similar_embeddings (idx_tokenizer, token, {nb_top:glob_nb_embeddings_compare});
 	let html="";
 	for (let idx in similars.values) {
 		let value=similars.values[idx];

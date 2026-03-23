@@ -113,7 +113,7 @@ function tf_organizer (params) {
 
     /////////////////////////////////////////////////////////////////////////////////////////
     this.affiche_var = function(){
-        let vars={glob_diffusion_nb_steps:glob_diffusion_nb_steps, glob_diffusion_ema_decay:glob_diffusion_ema_decay, glob_diffusion_ema_n_batch:glob_diffusion_ema_n_batch, glob_diffusion_ema_bool_active:glob_diffusion_ema_bool_active, glob_number_field_min:glob_number_field_min, glob_number_field_max:glob_number_field_max, glob_word_tokenizer_shuffle:glob_word_tokenizer_shuffle, glob_text_prediction_nb_words:glob_text_prediction_nb_words};
+        let vars={glob_diffusion_nb_steps:glob_diffusion_nb_steps, glob_diffusion_ema_decay:glob_diffusion_ema_decay, glob_diffusion_ema_n_batch:glob_diffusion_ema_n_batch, glob_diffusion_ema_bool_active:glob_diffusion_ema_bool_active, glob_number_field_min:glob_number_field_min, glob_number_field_max:glob_number_field_max, glob_word_tokenizer_shuffle:glob_word_tokenizer_shuffle, glob_text_prediction_nb_words:glob_text_prediction_nb_words, glob_nb_embeddings_compare:glob_nb_embeddings_compare};
         let html="<table><tr><td>var</td><td>val</td></tr>";
         for (let idx in vars) {
             let valeur=vars[idx];
