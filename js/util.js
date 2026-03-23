@@ -464,8 +464,8 @@ console.log(similars);
 	for (let idx in similars.values) {
 		let value=similars.values[idx];
 		let indice=similars.indices[idx];
-		let decode=tokenizer.decode([value]);
-		html+=decode+" ("+value+") => "+indice+" <br>";
+		let decode=tokenizer.decode([indice]);
+		html+=decode+" ("+indice+") => "+value+" <br>";
 	}
 	$("#zone_tk_embeddings_result").html(html);
 
