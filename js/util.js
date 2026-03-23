@@ -443,9 +443,29 @@ function get_similar_embeddings (tokenizer, idx_token, params) {
 	// Trouve les indices des tokens les plus proches
 	const {values, indices} = tf.topk(similarities, nb_top, true); // Top 5
 
-	values.print();
-	indices.print();
+	return ({values:values, indices:indices});
 
+
+}
+
+///////////////////////////////////////////////////////
+// clique_compare_embeddings ()
+function clique_compare_embeddings () {
+	let idx_tokenizer=$("#select_tokenizer_embeddings").val();
+	let tokenizer=tokenizers[idx_tokenizer];
+	let mot=$("#token_2_embeddings").val();
+	let tokens=tokenizer.encode(mot);
+	let token=tokens[1]; // on récupère le 2e token
+
+	let similars=get_similar_embeddings (idx_tokenizer, token, {});
+	let html="";
+	for (let idx in similars.values) {
+		let value=similars.values[idx];
+		let indice=similars.indices[idx];
+		let decode=tokenizer.decode([value]);
+		html+=decode+" ("+value+") => "+indice+" <br>";
+	}
+	$("#zone_tk_embeddings_result").html(html);
 
 }
 

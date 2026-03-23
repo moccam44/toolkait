@@ -634,10 +634,12 @@ include_once ("php/lang.php");
                         <button onclick="refresh_embeddings_form();"><?PHP print_intitule("button_refresh_list");  ?></button><br>
                         from token <input id="from_token"> to <input id="to_token">
                         <label for="bool_one_hot_embeddings">one hot</label><input type="checkbox" id="bool_one_hot_embeddings"><br>
-                        <button onclick="clique_genere_embeddings();"><?PHP print_intitule("button_refresh_list");  ?></button>
+                        <button onclick="clique_genere_embeddings();"><?PHP print_intitule("button_genere_embeddings");  ?></button>
                         <div id="progression_embeddings"></div>
-                        <br>
-                        <inp
+                        <br><br>
+                        <input id="token_2_embeddings">
+                        <button onclick="clique_compare_embeddings();"><?PHP print_intitule("button_compare_embeddings");  ?></button>
+
 
 
                     </div>

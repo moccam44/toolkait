@@ -127,6 +127,9 @@ $GLOBALS["intitules"]["button_update_comment"]=array("fr"=>"mettre à jour le co
 $GLOBALS["intitules"]["label_default_comment"]=array("fr"=>"aucun commentaire", "en"=>"no comment");
 $GLOBALS["intitules"]["button_tokenizers"]=array("fr"=>"afficher les tokenizers actuellement utilisés", "en"=>"show tokenizers actualy used");
 $GLOBALS["intitules"]["button_tokenizer_query"]=array("fr"=>"envoyer la requête au tokenizer", "en"=>"send request to the tokenizer");
+$GLOBALS["intitules"]["button_genere_embeddings"]=array("fr"=>"générer les embeddings", "en"=>"create embeddings");
+$GLOBALS["intitules"]["button_compare_embeddings"]=array("fr"=>"trouver les tokens approchants", "en"=>"find similar tokens");
+
 $GLOBALS["intitules"]["text_split_tableau"]=array(
 "fr"=>"Si les données sont trop volumineuses, la conversion en tenseurs peut faire planter le navigateur (sans avertissement). Pour éviter cela vous pouvez diviser vos données en
 plusieurs morceaux. Exemples : <br><br>0/10 : diviser les données en 10 et traiter 1ere partie (allant de 0 à 9) <br> 3/7 : diviser les données en 7 et traiter le 4e partie (allant de 0 à 6)<br>
