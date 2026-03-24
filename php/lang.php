@@ -119,6 +119,11 @@ $GLOBALS["intitules"]["button_affiche_form_select_layers"]=array("fr"=>"sélecti
 
 $GLOBALS["intitules"]["tab_tk_tokenizers"]=array("fr"=>"Tokenizers", "en"=>"Tokenizers");
 $GLOBALS["intitules"]["tab_tk_embeddings"]=array("fr"=>"Embeddings", "en"=>"Embeddings");
+$GLOBALS["intitules"]["label_tokenizer"]=array("fr"=>"Tokenizer", "en"=>"Tokenizer");
+$GLOBALS["intitules"]["label_embeddings_layer"]=array("fr"=>"Couche d'embedding", "en"=>"Embedding layer");
+$GLOBALS["intitules"]["label_from_token"]=array("fr"=>"Du token", "en"=>"From tokan");
+$GLOBALS["intitules"]["label_to_token"]=array("fr"=>"Au token", "en"=>"To token");
+$GLOBALS["intitules"]["label_one_hot"]=array("fr"=>"One hot ?", "en"=>"One hot ?");
 
 $GLOBALS["intitules"]["tab_memory_usage"]=array("fr"=>"utilisation de la mémoire", "en"=>"memory usage");
 $GLOBALS["intitules"]["tab_environment"]=array("fr"=>"environnement", "en"=>"environment");

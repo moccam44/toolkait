@@ -631,33 +631,33 @@ include_once ("php/lang.php");
                     <div id="zone_tk_embeddings_form" class="console">
                         <table>
                             <tr><td>
-                            tokenizer :
+                            <?PHP print_intitule("label_tokenizer");  ?> :
                             </td><td>
                             <select id="select_tokenizer_embeddings"></select>
                             <button onclick="affiche_tokenizers();" title='<?PHP print_intitule("button_refresh_list");  ?>' class='img_button'> <img src="IMG/icones/arrow_refresh.png"> </button>
                             </td></tr>
 
                             <tr><td>
-                            embedding layer :
+                            <?PHP print_intitule("label_embeddings_layer");  ?> :
                             </td><td>
                             <select id="select_embeddings_layer"></select>
                             <button onclick="refresh_embeddings_form();" title='<?PHP print_intitule("button_refresh_list");  ?>' class='img_button'> <img src="IMG/icones/arrow_refresh.png"> </button>
                             </td></tr>
 
                             <tr><td>
-                            from token :
+                            <?PHP print_intitule("label_from_token");  ?> :
                             </td><td>
                             <input id="from_token">
                             </td></tr>
 
                             <tr><td>
-                            to token :
+                            <?PHP print_intitule("label_to_token");  ?> :
                             </td><td>
                             <input id="to_token">
                             </td></tr>
 
                             <tr><td>
-                            <label for="bool_one_hot_embeddings">one hot</label><input type="checkbox" id="bool_one_hot_embeddings">
+                            <label for="bool_one_hot_embeddings"><?PHP print_intitule("label_one_hot");  ?></label><input type="checkbox" id="bool_one_hot_embeddings">
                             </td><td>
                             &nbsp;
                             </td></tr>
