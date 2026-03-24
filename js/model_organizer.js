@@ -1328,7 +1328,7 @@ function model_organizer (params) {
 	this.layers_espace = function(e) {
 		console.log(e);
 		decallage=this.decallage_bas;
-		let mouse_y=e.originalEvent.layer_y;
+		let mouse_y=e.originalEvent.layerY;
 		for (idx_layer in this.layers) {
 			let jq=this.layers[idx_layer]["jq"];
 			let top=this.top_str_2_int($(jq).css("top"));
