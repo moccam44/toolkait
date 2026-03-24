@@ -330,7 +330,7 @@ function genere_embeddings (tokenizer, idx_layer, params) {
 	let min_tokenizer=params["min_tokenizer"];
 	let max_tokenizer=params["max_tokenizer"];
 	let div_progression=params["div_progression"];
-	$(div_progression).html("generating embeddings... ");
+
 	if (bool_one_hot === undefined) {
 		bool_one_hot=false;
 	}
@@ -404,7 +404,10 @@ function clique_genere_embeddings () {
 		max=Number(max);
 	}
 	let params={min : min, max: max, div_progression: $("#progression_embeddings"), bool_one_hot: bool_one_hot};
-	genere_embeddings (idx_tokenizer, idx_layer, params);
+	$("#progression_embeddings").html("generating embeddings... ");
+
+	setTimeout(genere_embeddings, 500, idx_tokenizer, idx_layer, params);
+	//genere_embeddings (idx_tokenizer, idx_layer, params);
 }
 
 ///////////////////////////////////////////////////////
