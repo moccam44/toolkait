@@ -71,7 +71,7 @@ function model_organizer (params) {
         html+="</div>";
 
         $("#"+this.zone_model).html(html);
-		$("#layers_canva").on("click", function(e) {model_organizer.layers_espace(e);})
+		$("#layers_canva").on("click", function(e) {if (e.target === this) {model_organizer.layers_espace(e);}})
 
         this.add_layer();
     };
