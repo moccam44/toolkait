@@ -619,7 +619,7 @@ include_once ("php/lang.php");
                     <select id="tokenizer_type_query"><option value="encode">encode</option><option value="decode">decode</option></select>
                     <select id="select_tokenizer"></select>
                     <button onclick="query_tokenizer()"><?PHP print_intitule("button_tokenizer_query");  ?></button>
-                    <br/>
+                    <br/><br />
 
                     <div id="tokenizer_reponse">
 
@@ -628,25 +628,64 @@ include_once ("php/lang.php");
 
                 <div id="zone_tk_embeddings">
 
-                    <div id="zone_tk_embeddings_form">
-                        tokenizer : <select id="select_tokenizer_embeddings"></select>
-                        <button onclick="affiche_tokenizers();"><?PHP print_intitule("button_refresh_list");  ?></button><br>
-                        embedding layer : <select id="select_embeddings_layer"></select>
-                        <button onclick="refresh_embeddings_form();"><?PHP print_intitule("button_refresh_list");  ?></button><br>
-                        from token <input id="from_token"> to <input id="to_token">
-                        <label for="bool_one_hot_embeddings">one hot</label><input type="checkbox" id="bool_one_hot_embeddings"><br>
-                        <button onclick="clique_genere_embeddings();"><?PHP print_intitule("button_genere_embeddings");  ?></button>
-                        <div id="progression_embeddings"></div>
-                        <br><br>
-                        <input id="token_2_embeddings">
-                        <button onclick="clique_compare_embeddings();"><?PHP print_intitule("button_compare_embeddings");  ?></button>
+                    <div id="zone_tk_embeddings_form" class="console">
+                        <table>
+                            <tr><td>
+                            tokenizer :
+                            </td><td>
+                            <select id="select_tokenizer_embeddings"></select>
+                            <button onclick="affiche_tokenizers();" title='<?PHP print_intitule("button_refresh_list");  ?>'> <img src="IMG/icones_grandes/database.png"> </button>
+                            </td></tr>
 
+                            <tr><td>
+                            embedding layer :
+                            </td><td>
+                            <select id="select_embeddings_layer"></select>
+                            <button onclick="refresh_embeddings_form();"><?PHP print_intitule("button_refresh_list");  ?></button>
+                            </td></tr>
 
+                            <tr><td>
+                            from token :
+                            </td><td>
+                            <input id="from_token">
+                            </td></tr>
+
+                            <tr><td>
+                            to token :
+                            </td><td>
+                            <input id="to_token">
+                            </td></tr>
+
+                            <tr><td>
+                            <label for="bool_one_hot_embeddings">one hot</label><input type="checkbox" id="bool_one_hot_embeddings">
+                            </td><td>
+                            &nbsp;
+                            </td></tr>
+
+                            <tr><td>
+                            <button onclick="clique_genere_embeddings();"><?PHP print_intitule("button_genere_embeddings");  ?></button>
+                            </td><td>
+                            <div id="progression_embeddings"></div>
+                            </td></tr>
+
+                            <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+
+                             <tr><td>
+                            <input id="token_2_embeddings">
+                            </td><td>
+                            <button onclick="clique_compare_embeddings();"><?PHP print_intitule("button_compare_embeddings");  ?></button>
+                            </td></tr>
+
+                            <tr><td colspan="2">
+                                <div id="zone_tk_embeddings_result">
+
+                                </div>
+                            </td></tr>
+
+                        </table>
 
                     </div>
-                    <div id="zone_tk_embeddings_result">
 
-                    </div>
 
                 </div>
             </div>
