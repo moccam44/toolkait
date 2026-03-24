@@ -293,6 +293,10 @@ table.barre_icones td.icone{
     color:#1C3E57;
 }
 
+button.img_button {
+    border:none;
+}
+
 #bloc_menu_lateral button {
     width: 160px;
     margin:20px;
@@ -332,6 +336,8 @@ img.img_inline {
     width:400px;
     height:200px;
 }
+
+
 
 
 
