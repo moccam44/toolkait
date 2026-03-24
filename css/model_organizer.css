@@ -19,6 +19,7 @@ div.wbmo_meta {
 
 div.wbmo_layers {
     width : 80%;
+    height:100%;
 }
 
 div.wbmo_layers:hover {
