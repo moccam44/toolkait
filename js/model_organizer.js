@@ -1331,7 +1331,7 @@ function model_organizer (params) {
 		let mouse_y=e.originalEvent.y;
 		for (idx_layer in this.layers) {
 			let jq=this.layers[idx_layer]["jq"];
-			let top=this.top_str_2_int(jq).css("top");
+			let top=this.top_str_2_int($(jq).css("top"));
 	console.log ("layer "+idx_layer+" mouse_y : "+mouse_y+ " top : "+top);
 			if (top >= mouse_y) {
 				top += decallage;
