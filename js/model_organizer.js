@@ -66,11 +66,12 @@ function model_organizer (params) {
 
 		html+="</table><br>";
 		html+="</div>";// fin méta
-        html+="<div class='wbmo_layers'>";
+        html+="<div class='wbmo_layers' id='layers_canva'>";
 
         html+="</div>";
 
         $("#"+this.zone_model).html(html);
+		$("#layers_canva").on("click", function(e) {model_organizer.layers_espace(e);})
 
         this.add_layer();
     };
@@ -1321,6 +1322,12 @@ function model_organizer (params) {
 		}
 		this.refresh_links();
 	};
+
+	////////////////////////////////////////////////////////////////////////////
+	// layers_espace
+	this.layers_espace = function(e) {
+		console.log(e);
+	}
 	
 	////////////////////////////////////////////////////////////////////////////
     // delete_layer

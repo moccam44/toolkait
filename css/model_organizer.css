@@ -21,6 +21,10 @@ div.wbmo_layers {
     width : 80%;
 }
 
+div.wbmo_layers:hover {
+   cursor:row-resize;
+}
+
 /** DIV pour 1 layer **/
 
 div.wbmo_layer {
