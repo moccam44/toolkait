@@ -1326,13 +1326,11 @@ function model_organizer (params) {
 	////////////////////////////////////////////////////////////////////////////
 	// layers_espace
 	this.layers_espace = function(e) {
-		console.log(e);
 		decallage=this.decallage_bas;
 		let mouse_y=e.originalEvent.layerY;
 		for (idx_layer in this.layers) {
 			let jq=this.layers[idx_layer]["jq"];
 			let top=this.top_str_2_int($(jq).css("top"));
-	console.log ("layer "+idx_layer+" mouse_y : "+mouse_y+ " top : "+top);
 			if (top >= mouse_y) {
 				top += decallage;
 				$(jq).css('top', String(top) + "px");

@@ -108,7 +108,7 @@ img.wbmo_click_highlight {
 connection.wbmo_connection {
 	border-radius:50px;
 	border: 2px solid blue;
-
+    cursor: default;
 	z-index : 0;
 }
 
