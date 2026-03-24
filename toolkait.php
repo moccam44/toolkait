@@ -634,14 +634,14 @@ include_once ("php/lang.php");
                             tokenizer :
                             </td><td>
                             <select id="select_tokenizer_embeddings"></select>
-                            <button onclick="affiche_tokenizers();" title='<?PHP print_intitule("button_refresh_list");  ?>' class='img_button'> <img src="IMG/icones_grandes/arrow_refresh.png"> </button>
+                            <button onclick="affiche_tokenizers();" title='<?PHP print_intitule("button_refresh_list");  ?>' class='img_button'> <img src="IMG/icones/arrow_refresh.png"> </button>
                             </td></tr>
 
                             <tr><td>
                             embedding layer :
                             </td><td>
                             <select id="select_embeddings_layer"></select>
-                            <button onclick="refresh_embeddings_form();" title='<?PHP print_intitule("button_refresh_list");  ?>' class='img_button'> <img src="IMG/icones_grandes/arrow_refresh.png"> </button>
+                            <button onclick="refresh_embeddings_form();" title='<?PHP print_intitule("button_refresh_list");  ?>' class='img_button'> <img src="IMG/icones/arrow_refresh.png"> </button>
                             </td></tr>
 
                             <tr><td>
