@@ -51,6 +51,8 @@
                         <li><a href="https://jalammar.github.io/illustrated-word2vec/" target="_blank">embedding</a></li>
                         <li><a href="https://www.youtube.com/watch?v=EL439RMv3Xc" target="_blank">RNN</a></li>
                         <li><a href="https://jalammar.github.io/illustrated-transformer/" target="_blank">Transformer, attention, positional encoding</a></li>
+                        <br>
+                        <li><a href="https://statquest.org/video_index.html" target="_blank">Many usefull ressources on statquest.org</a></li>
                     </ul>
                 </li>
 

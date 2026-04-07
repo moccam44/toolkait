@@ -55,6 +55,8 @@
                 <li><a href="https://www.youtube.com/watch?v=2c9JixSEYU8" target="_blank">embedding</a></li>
                 <li><a href="https://www.youtube.com/watch?v=EL439RMv3Xc" target="_blank">RNN</a></li>
                 <li><a href="https://jalammar.github.io/illustrated-transformer/" target="_blank">Transformer, attention, positional encoding</a></li>
+                <br>
+                <li><a href="https://statquest.org/video_index.html" target="_blank">Beaucoup de ressources intéressantes sur statquest.org (anglais)</a></li>
             </ul>
         </li>
 
