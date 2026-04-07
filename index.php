@@ -96,7 +96,6 @@ include_once ("php/lang.php");
             <?PHP print_intitule("text_presentation_toolkait");  ?>
             <br /><br />
             <a href="https://theresanaiforthat.com/ai/toolkait/?ref=featured&v=9177857" target="_blank" rel="nofollow"><img width="300" src="https://media.theresanaiforthat.com/featured-on-taaft.png?width=600"></a>
-
         </div>
 
 
