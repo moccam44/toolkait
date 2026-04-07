@@ -146,7 +146,7 @@ plusieurs morceaux. Exemples : <br><br>0/10 : diviser les données en 10 et trai
 // INDEX
 $GLOBALS["intitules"]["text_presentation_toolkait"]=array(
 "fr"=>"<p>Toolkait est une application libre et gratuite, accessible depuis le navigateur (rien à télécharger ni à installer) </p>
-                   <p>Elle vous permet de créer et entrainer vos propres réseaux de neurones avec vos propres données ou des données disponibles sur Internet, afin de vous initier à l'intelligence artificielle. Avec Toolkait vous pourrez :</p>
+                   <p>Elle vous permet de créer et entrainer vos propres réseaux de neurones avec vos propres données ou des données disponibles sur Internet, afin de vous initier à l'intelligence artificielle sans avoir à coder. Avec Toolkait vous pourrez :</p>
                    <ul>
                        <li>Utiliser vos propres données (en .csv .parquet...) ou piocher parmi les milliers de jeux de données disponibles en ligne. Toolkait peut gérer les données numériques, catégories, images et texte</li>
                        <li>pré-traiter ces données (normalisation, tokenisation, shuffling...)</li>
@@ -159,7 +159,7 @@ $GLOBALS["intitules"]["text_presentation_toolkait"]=array(
                    <p>La création d'un compte est optionnelle (et gratuite). Il sert uniquement à enregistrer vos modèles et vos jeux de données</p>",
 
 "en"=>"<p>Toolkait is a free and open-source application, accessible from the browser (nothing to download or install).</p>
-       <p>It allows you to create and train your own neural networks with your own data or data available on the internet, to introduce you to artificial intelligence. With Toolkait, you can :</p>
+       <p>It allows you to create and train your own neural networks with your own data or data available on the internet, to introduce you to artificial intelligence with no coding skills. With Toolkait, you can :</p>
        <ul>
        <li>Use your own data (in .csv, .parquet, etc.) or choose from thousands of datasets available online. Toolkait can handle numeric data, categories, images, and text.</li>
        <li>Preprocess this data (normalization, tokenization, shuffling, etc.)</li>
