@@ -69,9 +69,9 @@ include_once ("php/lang.php");
             <td><div class="flag"><a href="index.php?lang=fr"><img class="pointer" src="IMG/icones_grandes/flag_fr.png" id="french_flag" /></a></div></td></tr></table>
 
             <div><a href="toolkait.php?lang=<?PHP print_language();  ?>" target="_blank"> <button> <?PHP print_intitule("button_acces_toolkait");  ?> </button></a></div>
-            <div"><a href="help.php?lang=<?PHP print_language();  ?>" target="_blank"> <button> <?PHP print_intitule("button_get_help");  ?> </button></a></div>
+            <div><a href="help.php?lang=<?PHP print_language();  ?>" target="_blank"> <button> <?PHP print_intitule("button_get_help");  ?> </button></a></div>
 
-            <a href="https://theresanaiforthat.com/ai/toolkait/?ref=featured&v=9177857" target="_blank" rel="nofollow"><img width="300" src="https://media.theresanaiforthat.com/featured-on-taaft.png?width=600"></a>
+            <div><a href="https://theresanaiforthat.com/ai/toolkait/?ref=featured&v=9177857" target="_blank" rel="nofollow"><img width="300" src="https://media.theresanaiforthat.com/featured-on-taaft.png?width=600"></a></div>
 
         </div>
 
