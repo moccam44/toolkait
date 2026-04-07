@@ -71,6 +71,8 @@ include_once ("php/lang.php");
             <div><a href="toolkait.php?lang=<?PHP print_language();  ?>" target="_blank"> <button> <?PHP print_intitule("button_acces_toolkait");  ?> </button></a></div>
             <div"><a href="help.php?lang=<?PHP print_language();  ?>" target="_blank"> <button> <?PHP print_intitule("button_get_help");  ?> </button></a></div>
 
+            <a href="https://theresanaiforthat.com/ai/toolkait/?ref=featured&v=9177857" target="_blank" rel="nofollow"><img width="300" src="https://media.theresanaiforthat.com/featured-on-taaft.png?width=600"></a>
+
         </div>
 
         <div id="bloc_carousel">
