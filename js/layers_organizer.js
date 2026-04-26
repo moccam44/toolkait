@@ -117,7 +117,7 @@ function layers_organizer (params) {
         html+="</table>";
         
         $("#"+this.formulaire_layer).html(html);
-        this.formulaire = $("#"+this.formulaire_layer).dialog({autoOpen: false, height: 500, width: 450, modal: true });
+        this.formulaire = $("#"+this.formulaire_layer).dialog({autoOpen: false, height: 500, width: 450, modal: true});
         //$("#"+this.formulaire_layer+" [name='wbto_form_sens'] option[value='"+colonne.sens+"']").prop('selected', true); // on met la valeur de sens
         //$("#"+this.formulaire_tableau+" [name='wbto_form_type'] option[value='"+colonne.type+"']").prop('selected', true); // on met la valeur de type
         this.masque_formulaire(); // on applique le masque
@@ -427,7 +427,7 @@ function layers_organizer (params) {
 		html+="Le modèle a été généré avec succès.<br><br>";
 		html+="<button onclick=\"wb_menu_main.clique('wb_layers_map');layers_organizer.formulaire.dialog('close');\">voir le résultat</a>";
 		$("#"+this.formulaire_layer).html(html);
-        this.formulaire = $("#"+this.formulaire_layer).dialog({autoOpen: false, height: 400, width: 350, modal: true });
+        this.formulaire = $("#"+this.formulaire_layer).dialog({autoOpen: false, height: 400, width: 350, modal: true});
         this.formulaire.dialog("open");
 		
 	};

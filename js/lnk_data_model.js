@@ -189,7 +189,7 @@ function lnk_data_model (params) {
 		html+="<button onclick=\"wb_menu_main.clique('wb_cog_go');model_organizer.formulaire.dialog('close');\">"+glob_get_intitule("button_start_training")+"</a>";
 		html+="<button onclick=\"wb_menu_main.clique('wb_horoscope');model_organizer.formulaire.dialog('close');\">"+glob_get_intitule("button_test_model")+"</a><br>";
 		$("#"+this.formulaire_layer).html(html);
-        this.formulaire = $("#"+this.formulaire_layer).dialog({autoOpen: false, height: 400, width: 450, modal: true, position: { my: "center top", at: "top+100", of: window } });
+        this.formulaire = $("#"+this.formulaire_layer).dialog({autoOpen: false, height: 400, width: 450, modal: true, position: { my: "center top", at: "top+100", of: window, collision: "none" } });
         this.formulaire.dialog("open");
 		
 	};
@@ -260,7 +260,7 @@ function lnk_data_model (params) {
 		html+="</table>";
 		html+="<button onclick='lnk_data_model.add_multi("+idx_couche+")'>OK</button>";
 		$("#"+lnk_data_model.formulaire_layer).html(html);
-		lnk_data_model.formulaire = $("#"+lnk_data_model.formulaire_layer).dialog({autoOpen: false, height: 600, width: 450, modal: true, position: { my: "center top", at: "top+100", of: window } });
+		lnk_data_model.formulaire = $("#"+lnk_data_model.formulaire_layer).dialog({autoOpen: false, height: 600, width: 450, modal: true, position: { my: "center top", at: "top+100", of: window, collision: "none" } });
 		lnk_data_model.formulaire.dialog("open");
 
 

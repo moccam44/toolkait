@@ -34,7 +34,7 @@ function user_organizer () {
         html+="</table></div>";
 
         this.popup.html(html);
-        this.popup.dialog({autoOpen: false, height: 400, width: 900, modal: true, position: { my: "center top", at: "top+100", of: window } });
+        this.popup.dialog({autoOpen: false, height: 400, width: 900, modal: true, position: { my: "center top", at: "top+100", of: window, collision: "none" } });
         this.popup.dialog("open"); // vérif si utile
     }
 
@@ -54,7 +54,7 @@ function user_organizer () {
         html+="</table></div>";
 
         this.popup.html(html);
-        this.popup.dialog({autoOpen: false, height: 500, width: 900, modal: true, position: { my: "center top", at: "top+100", of: window } });
+        this.popup.dialog({autoOpen: false, height: 500, width: 900, modal: true, position: { my: "center top", at: "top+100", of: window, collision: "none" } });
         this.popup.dialog("open"); // vérif si utile
 
 

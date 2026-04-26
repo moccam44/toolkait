@@ -1155,7 +1155,7 @@ function model_organizer (params) {
 		html+="<button onclick=\"$( '#"+this.menu_model+"' ).tabs( 'option', 'active', 0 );model_organizer.formulaire.dialog('close');\">"+glob_get_intitule("button_update_model")+"</button> ";
 		html+="<button onclick=\"$( '#"+this.menu_model+"' ).tabs( 'option', 'active', 1 );model_organizer.formulaire.dialog('close');\">"+glob_get_intitule("button_show_details")+"</button> <br>";
 		$("#"+this.formulaire_layer).html(html);
-        this.formulaire = $("#"+this.formulaire_layer).dialog({autoOpen: false, height: 400, width: 350, modal: true, position: { my: "center top", at: "top+100", of: window } });
+        this.formulaire = $("#"+this.formulaire_layer).dialog({autoOpen: false, height: 400, width: 350, modal: true, position: { my: "center top", at: "top+100", of: window, collision: "none" } });
         this.formulaire.dialog("open");
 		
 	};
@@ -1951,7 +1951,7 @@ function model_organizer (params) {
 		html+="<button onclick=\"model_organizer.formulaire.dialog('close');\">OK</a>";
 		
 		$("#"+this.formulaire_layer).html(html);
-        this.formulaire = $("#"+this.formulaire_layer).dialog({autoOpen: false, height: 600, width: 450, modal: true, position: { my: "center top", at: "top+100", of: window } });
+        this.formulaire = $("#"+this.formulaire_layer).dialog({autoOpen: false, height: 600, width: 450, modal: true, position: { my: "center top", at: "top+100", of: window, collision: "none" } });
         this.formulaire.dialog("open");
 	}
 	
@@ -1962,7 +1962,7 @@ function model_organizer (params) {
 		html+=glob_get_intitule("text_waiting_model_compile");
 
 		$("#"+this.formulaire_layer).html(html);
-        this.formulaire = $("#"+this.formulaire_layer).dialog({autoOpen: false, height: 600, width: 450, modal: true, position: { my: "center top", at: "top+100", of: window } });
+        this.formulaire = $("#"+this.formulaire_layer).dialog({autoOpen: false, height: 600, width: 450, modal: true, position: { my: "center top", at: "top+100", of: window, collision: "none" } });
         this.formulaire.dialog("open");
 	}
 
@@ -2049,7 +2049,7 @@ function model_organizer (params) {
 		html=html_check+"<br>"+html_layers+"<br>"+html_actions;
 
 		$("#"+model_organizer.formulaire_layer).html(html);
-		model_organizer.formulaire = $("#"+this.formulaire_layer).dialog({autoOpen: false, height: 600, width: 450, modal: true, position: { my: "center top", at: "top+100", of: window } });
+		model_organizer.formulaire = $("#"+this.formulaire_layer).dialog({autoOpen: false, height: 600, width: 450, modal: true, position: { my: "center top", at: "top+100", of: window, collision: "none" } });
 		model_organizer.formulaire.dialog("open");
 
 	}

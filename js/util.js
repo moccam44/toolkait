@@ -217,7 +217,7 @@ function change_langue2 () {
 		"            <div class=\"flag\"><img class=\"pointer\" src=\"IMG/icones_grandes/flag_fr.png\" id=\"french_flag\" onclick=\"window.location.href='toolkait.php?lang=fr'\"/></div>\n" +
 		"            </div>\n";
 	$("#popup_user").html(html);
-	$("#popup_user").dialog({autoOpen: false, height: 400, width: 900, modal: true, position: { my: "center top", at: "top+100", of: window } });
+	$("#popup_user").dialog({autoOpen: false, height: 400, width: 900, modal: true, position: { my: "center top", at: "top+100", of: window, collision: "none" } });
 	$("#popup_user").dialog("open"); // vérif si utile
 
 }

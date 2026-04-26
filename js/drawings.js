@@ -667,7 +667,7 @@ function drawings (params) {
 		html+="</table>";
 		html+="<button onclick='drawings.select_layers()'>OK</button>";
 		$("#"+drawings.formulaire_layer).html(html);
-		drawings.formulaire = $("#"+drawings.formulaire_layer).dialog({autoOpen: false, height: 600, width: 450, modal: true, position: { my: "center top", at: "top+100", of: window } });
+		drawings.formulaire = $("#"+drawings.formulaire_layer).dialog({autoOpen: false, height: 600, width: 450, modal: true, position: { my: "center top", at: "top+100", of: window, collision: "none" } });
 		drawings.formulaire.dialog("open");
 
 	}

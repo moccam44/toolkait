@@ -675,7 +675,7 @@ function table_organizer (params) {
         html+="</table>";
         
         $("#"+this.formulaire_tableau).html(html);
-        this.formulaire = $("#"+this.formulaire_tableau).dialog({autoOpen: false, height: 700, width: 600, modal: true, position: { my: "center top", at: "top+100", of: window } });
+        this.formulaire = $("#"+this.formulaire_tableau).dialog({autoOpen: false, height: 700, width: 600, modal: true, position: { my: "center top", at: "top+100", of: window, collision: "none" } });
         $("#"+this.formulaire_tableau+" [name='wbto_form_type'] option[value='"+colonne.type+"']").prop('selected', true); // on met la valeur de type
 		$("#"+this.formulaire_tableau+" [name='wbto_form_img_channels'] option[value='"+colonne.img_channels+"']").prop('selected', true); // on met la valeur de img_channels
 		$("#"+this.formulaire_tableau+" [name='wbto_form_img_format'] option[value='"+colonne.img_format+"']").prop('selected', true); // on met la valeur de img_format
@@ -2311,7 +2311,7 @@ function table_organizer (params) {
 		html+=glob_get_intitule("label_end_data_processing")+".<br><br>";
 		html+="<button onclick=\"wb_menu_main.clique('wb_tenseurs');table_organizer.formulaire.dialog('close');\">"+glob_get_intitule("button_show_result")+"</a>";
 		$("#"+this.formulaire_tableau).html(html);
-        this.formulaire = $("#"+this.formulaire_tableau).dialog({autoOpen: false, height: 400, width: 350, modal: true , position: { my: "center top", at: "top+100", of: window }});
+        this.formulaire = $("#"+this.formulaire_tableau).dialog({autoOpen: false, height: 400, width: 350, modal: true , position: { my: "center top", at: "top+100", of: window, collision: "none" }});
         this.formulaire.dialog("open");
 	};
 	
@@ -2398,7 +2398,7 @@ function table_organizer (params) {
 		html+="<button onclick=\"table_organizer.formulaire.dialog('close');\">OK</a>";
 		
 		$("#"+this.formulaire_tableau).html(html);
-        this.formulaire = $("#"+this.formulaire_tableau).dialog({autoOpen: false, height: 600, width: 450, modal: true, position: { my: "center top", at: "top+100", of: window } });
+        this.formulaire = $("#"+this.formulaire_tableau).dialog({autoOpen: false, height: 600, width: 450, modal: true, position: { my: "center top", at: "top+100", of: window, collision: "none" } });
         this.formulaire.dialog("open");
 	}
 
