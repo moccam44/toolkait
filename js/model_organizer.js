@@ -393,7 +393,7 @@ function model_organizer (params) {
         html+="</table>";
         
         $("#"+this.formulaire_layer).html(html);
-        this.formulaire = $("#"+this.formulaire_layer).dialog({autoOpen: false, height: 700, width: 600, modal: true, position: { my: "center top", at: "top+100", of: window } });
+        this.formulaire = $("#"+this.formulaire_layer).dialog({autoOpen: false, height: 700, width: 600, modal: true, position: { my: "center top", at: "top+100", of: window, collision: "none" } });
         this.masque_formulaire(); // on applique le masque
         this.formulaire.dialog("open");
     };
